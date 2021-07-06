@@ -1,0 +1,31 @@
+body {
+    background-image: url("bg4.jpg");
+    background-size: cover;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    color: #000000;
+    font-size: 6em;
+    font-weight: bold;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    transition: 4s;
+}
+
+ul li:hover,
+ul li:hover~li {
+    transform: rotate(180deg) translateY(-200px);
+    transition: 2s;
+    filter: blur(20px);
+    opacity: 0;
+}
